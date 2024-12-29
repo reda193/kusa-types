@@ -1,0 +1,66 @@
+.verify-container {
+    background: #222;
+    width: 360px;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px auto;
+}
+
+.verify-header {
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 24px;
+}
+
+.errMsg {
+    background-color: rgba(255, 0, 0, 0.1);
+    color: #ff4444;
+    padding: 12px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.code-inputs {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.code-inputs input {
+    width: 45px;
+    height: 45px;
+    background: #2a2a2a;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.code-inputs input:focus {
+    outline: none;
+    background: #333;
+}
+
+.verifybutton {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.verifybutton:last-child {
+    margin-top: 8px;
+}
+
+.verifybutton:hover {
+    background: #2563eb;
+}

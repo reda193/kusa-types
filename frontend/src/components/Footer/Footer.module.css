@@ -1,0 +1,27 @@
+footer {
+    padding-top: 30%;
+    color: white;
+}
+
+.sectionone {
+    float: left;
+}
+.sectiontwo {
+    float: right;
+   
+}
+.icon {
+    padding-right: 10px;
+}
+a {
+    text-decoration: none;  
+    color: inherit;        
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:hover {
+    color: #3b82f6; 
+}

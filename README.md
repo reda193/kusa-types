@@ -1,0 +1,2 @@
+# kusa-types
+Monkeytype clone

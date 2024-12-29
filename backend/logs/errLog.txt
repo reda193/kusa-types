@@ -1,0 +1,37 @@
+20241110	09:21:37	cd3fe587-3dfa-4205-9999-db90ec1fa17f	TypeError	fsPromises.readFil is not a function
+20241110	09:22:08	b73d22c7-9e85-4dd9-a47d-8d3fffd6a052	TypeError	fsPromises.readFil is not a function
+20241110	10:13:03	3f98353e-5999-49cc-89eb-0a230b5b48a5	Error: Not allowed by Cors
+20241110	20:53:42	eed7de6d-0e73-49ee-b241-46d30c29b699	ReferenceError: reset is not defined
+20241110	20:53:57	d5075585-63ba-442d-96d0-cc8af9e0b8da	ReferenceError: reset is not defined
+20241110	20:54:07	3592c75b-2ee9-495d-bca2-eb7687eb834a	ReferenceError: reset is not defined
+20241110	20:54:07	1e22ed7e-19e5-475f-8374-cf82695bbe8e	ReferenceError: reset is not defined
+20241110	21:21:37	14d8dc03-6d37-4990-8b3a-d0edb484b0fd	TypeError: res.stauts is not a function
+20241110	22:38:38	87cd28c1-481b-426b-9cde-365bc02012b1	SyntaxError: Expected property name or '}' in JSON at position 2
+20241111	21:23:35	763a3bfa-28e4-4fd1-8e29-ec9d91d564c5	TypeError: authHeader.spliti is not a function
+20241112	21:43:06	0e28c2fd-03bf-4b70-affe-a53153ded066	ReferenceError: json is not defined
+20241112	21:43:14	858569f6-ab68-4e38-b581-38539f79c5c2	ReferenceError: json is not defined
+20241112	21:43:15	c3bdbbf0-fe40-4bb2-bdcb-41bc68dff24b	ReferenceError: json is not defined
+20241112	21:44:12	430bcc39-0f4c-4c48-ac64-591fbb5237a7	ReferenceError: json is not defined
+20241112	21:44:14	f09dabd2-dc90-416e-a500-3321439ae2e1	ReferenceError: json is not defined
+20241112	21:44:56	4d3ad36c-b761-49e7-81e9-a576d40bfbba	ReferenceError: json is not defined
+20241112	21:44:57	449ef25c-9db1-48bc-8562-b2c795416160	ReferenceError: json is not defined
+20241112	21:44:58	a4383a6f-6af6-4c20-ba54-5b7180f1d111	ReferenceError: json is not defined
+20241112	21:44:58	d9913aa8-ea9c-4b6e-af36-732b07d7f168	ReferenceError: json is not defined
+20241112	21:44:58	56a3e840-2c57-4605-a340-59cdcb64c11d	ReferenceError: json is not defined
+20241112	21:44:59	39f0ed04-d16b-48c1-9a7d-ea077105b659	ReferenceError: json is not defined
+20241117	10:57:04	6fdbca90-9ff0-4271-922f-b41ad4735f66	SyntaxError: Expected ',' or '}' after property value in JSON at position 50
+20241117	11:01:43	0acebc82-3e19-40da-b2f8-fe106e912358	SyntaxError: Expected ',' or '}' after property value in JSON at position 54
+20241201	18:32:07	12b9693e-b7a9-47cf-bcea-aabb0d9ffb31	SyntaxError: Unexpected token 'e', "eyJhbGciOi"... is not valid JSON
+20241228	10:50:28	dc0fc584-ed08-41fe-b580-1f4d67e76b6a	Error: Not allowed by Cors
+20241228	10:50:28	81dbe8f3-7cbb-4cc2-bda9-5f44489e4213	Error: Not allowed by Cors
+20241228	10:50:28	20e04d95-5da9-4319-9649-0e3a1596e4f6	Error: Not allowed by Cors
+20241228	10:50:28	853d01cf-7e50-44dc-9229-be3debba27c5	Error: Not allowed by Cors
+20241228	10:50:28	96b86151-e370-4c19-a091-46237b758972	Error: Not allowed by Cors
+20241228	10:50:28	bc4581e3-61ff-443b-b56e-3b4ea8f5ac1b	Error: Not allowed by Cors
+20241228	10:50:28	74353fe3-479c-49f5-b6ff-2c15f50df65d	Error: Not allowed by Cors
+20241228	10:50:28	a581d443-fefe-46e2-b6e8-bd2d601b9bd6	Error: Not allowed by Cors
+20241228	10:50:28	a79530e9-95f5-48e5-a267-ce8405d4bae1	Error: Not allowed by Cors
+20241228	10:50:28	8662cc7e-17be-43fd-93e3-5b59aa577a68	Error: Not allowed by Cors
+20241228	10:50:28	d3593ae4-ca8c-47ac-b60a-9c4d2103f8bc	Error: Not allowed by Cors
+20241228	10:50:28	5dc43cff-c0cd-4439-b97b-4b9c9a62d9ac	Error: Not allowed by Cors
+20241228	10:50:28	18189317-fd90-4953-9baf-2fa733d27899	Error: Not allowed by Cors

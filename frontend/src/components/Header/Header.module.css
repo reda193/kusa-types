@@ -1,0 +1,65 @@
+.header {
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 15%;
+    right: 15%;
+    z-index: 1000;
+
+}
+.logo {
+    cursor: pointer;
+}
+.leftheader {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between title and icons */
+}
+
+.leftheader h1 {
+    margin: 0;
+    margin-right: 10px;
+}
+
+.icon {
+    font-size: 20px; /* Adjust icon size as needed */
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.rightheader {
+    margin-left: auto; /* Pushes the user icon to the right */
+}
+
+.icon {
+    cursor:pointer;
+}
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.user {
+    cursor: pointer;
+    padding-right: 25px;
+}
+
+.signout {
+    all: unset;
+}
+
+
+
+
+
+

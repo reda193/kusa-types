@@ -1,0 +1,77 @@
+.container {
+    max-width: 56rem;
+    margin: 2rem auto;
+    background-color: rgba(31, 41, 55, 0.5);
+    backdrop-filter: blur(8px);
+    border-radius: 0.75rem;
+    padding: 2rem;
+    color: white;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: white;
+  }
+  
+  .statsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .statCard {
+    padding: 1.5rem;
+    background-color: rgba(31, 41, 55, 0.8);
+    border-radius: 0.75rem;
+    text-align: center;
+    transform: scale(1);
+    transition: transform 0.2s;
+  }
+  
+  .statCard:hover {
+    transform: scale(1.05);
+  }
+  
+  .statLabel {
+    font-size: 1.125rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.75rem;
+  }
+  
+  .statValue {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .graphContainer {
+    width: 100%;
+    height: 400px;
+  }
+  
+  .noData {
+    max-width: 56rem;
+    margin: 2rem auto;
+    background-color: rgb(31, 41, 55);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    color: white;
+  }
+  
+  .noDataTitle {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .noDataText {
+    text-align: center;
+    padding: 2rem 0;
+  }
