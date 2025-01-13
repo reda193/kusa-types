@@ -79,36 +79,9 @@ const TypingScreen = ({ initialTime, gameMode, targetWordCount, selected }) => {
     const typingScreenRef = useRef(null);
     const cursorRef = useRef(null);
     const containerRef = useRef(null);
+    
+    
 
-    useEffect(() => {
-        const handleResize = () => {
-            const currentWindowWidth = window.innerWidth;
-            if (currentWindowWidth < 475) {
-                setVisibleWords(3);
-            } else if (currentWindowWidth < 575) {
-                setVisibleWords(4);
-            } else if (currentWindowWidth < 675) {
-                setVisibleWords(5);
-            } else if (currentWindowWidth < 775) {
-                setVisibleWords(6);
-            } else if (currentWindowWidth < 875) {
-                setVisibleWords(7);
-            } else if (currentWindowWidth < 975) {
-                setVisibleWords(8);
-            } else if (currentWindowWidth < 1075) {
-                setVisibleWords(9);
-            } else if (currentWindowWidth < 1175) {
-                setVisibleWords(10);
-            } else if (currentWindowWidth < 1275) {
-                setVisibleWords(11)
-            } else {
-                setVisibleWords(WORDS_PER_LINE);
-            }
-        };
-        window.addEventListener('resize', handleResize);
-        handleResize(); // Initial check
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
     const generateWord = useCallback(() => {
         if (selected.numbers && Math.random() < 0.3) { // 30% chance for numbers
             return generateNumberWord();
@@ -163,6 +136,48 @@ const TypingScreen = ({ initialTime, gameMode, targetWordCount, selected }) => {
         ));
     }, [generateNewLine]);
 
+    const handleResize = useCallback(() => {
+        const currentWindowWidth = window.innerWidth;
+        let newVisibleWords;
+        
+        if (currentWindowWidth < 475) {
+            newVisibleWords = 3;
+        } else if (currentWindowWidth < 575) {
+            newVisibleWords = 3;
+        } else if (currentWindowWidth < 675) {
+            newVisibleWords = 4;
+        } else if (currentWindowWidth < 775) {
+            newVisibleWords = 5;
+        } else if (currentWindowWidth < 875) {
+            newVisibleWords = 6;
+        } else if (currentWindowWidth < 975) {
+            newVisibleWords = 7;
+        } else if (currentWindowWidth < 1075) {
+            newVisibleWords = 8;
+        } else if (currentWindowWidth < 1175) {
+            newVisibleWords = 9;
+        } else if (currentWindowWidth < 1800) {
+            newVisibleWords = 10;
+        } else {
+            newVisibleWords = WORDS_PER_LINE;
+        }
+
+        setVisibleWords(newVisibleWords);
+        
+        if (!gameStarted) {
+            loadWords();
+        }
+    }, [gameStarted, loadWords]);
+
+    useEffect(() => {
+        handleResize();
+        window.addEventListener('resize', handleResize);
+        
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, [handleResize]);
+
     const shiftLinesUp = useCallback(() => {
         setWords(prevWords => {
             const newWords = [...prevWords.slice(1), generateNewLine()];
@@ -206,7 +221,7 @@ const TypingScreen = ({ initialTime, gameMode, targetWordCount, selected }) => {
             }
             loadWords();
             resetTimer();
-            
+            handleResize();
             setGameStats({
                 wpm: 0,
                 accuracy: 0,
@@ -215,7 +230,7 @@ const TypingScreen = ({ initialTime, gameMode, targetWordCount, selected }) => {
                 incorrectWords: 0
             });
         }
-    }, [loadWords, wordModeInterval, gameStarted, resetTimer]);
+    }, [loadWords, wordModeInterval, gameStarted, resetTimer, handleResize]);
     
 
     const isInitialMount = useRef(true);

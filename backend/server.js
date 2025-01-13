@@ -13,6 +13,8 @@ const mongoose = require('mongoose');
 const connectDB = require('./config/dbConn');
 const addFields = require('./controllers/AddFields');
 const testEmail = require('./config/verificationEmail')
+const validateSimklOrigin = require('./middleware/validateSkimklOrigin')
+const validateLastFmOrigin = require('./middleware/validateLastFmOrigin');
 const PORT = process.env.PORT || 3500;
 
 // Connect to MongoDB
@@ -36,7 +38,10 @@ app.use(cookieParser());
 
 //serve static files
 app.use(express.static(path.join(__dirname, '/public')));
-
+app.use('/simkl', validateSimklOrigin);
+app.use('/lastfm', validateLastFmOrigin);
+app.use('/simkl', require('./routes/simkl'));
+app.use('/lastfm', require('./routes/lastfm'));
 app.use('/register', require('./routes/register'));
 app.use('/login', require('./routes/login'));
 app.use('/refresh', require('./routes/refresh'));
