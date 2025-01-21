@@ -11,7 +11,6 @@ KNOWN-BUGS:
  THINGS TO CHANGE:
 - Change up the authentication. Make it more dynamic and just in general better
 - Make the leaderboard better (kinda botched but it works as intended)
-- Make the css better. Currentyl authenaticon pages are not always aligned
 - Game results screen. Make it look better and add graphs
 - Implement tailwindcss (maybe) one day
 
